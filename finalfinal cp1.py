@@ -98,7 +98,7 @@ stoplong=input("stopping latitude")
 import requests
 # Make the Request (Dont foreget to change the API key)
 #r= requests.get("https://api.tomtom.com/routing/1/calculateRoute/11.02268,76.942616:11.01474,76.954777/xml?key=<yourkey>")
-r= requests.get("https://api.tomtom.com/routing/1/calculateRoute/%s,%s:%s,%s/xml?key=GpStJHpdsevBpRiaQU5wYzLeIQuCCEcI"%(startlat,startlong,stoplat,stoplong))
+r= requests.get("https://api.tomtom.com/routing/1/calculateRoute/%s,%s:%s,%s/xml?key=<yourkey>"%(startlat,startlong,stoplat,stoplong))
 # Print out the response to make sure it went through
 print(r)
 
